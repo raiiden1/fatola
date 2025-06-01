@@ -1,0 +1,94 @@
+/* Base styles for all devices */
+body {
+  padding: 2rem;
+  background-color: whitesmoke;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+/* ============================= */
+/* 📱 Mobile Devices (Phones)    */
+/* ============================= */
+@media (max-width: 576px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-inner img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .tab-content,
+  .accordion,
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .list-group-item {
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================= */
+/* 💻 Tablets (Small to Medium) */
+/* ============================= */
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* ============================= */
+/* 🖥 Larger Screens (Desktops) */
+/* ============================= */
+@media (min-width: 769px) {
+  .carousel-inner img {
+    height: 300px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
